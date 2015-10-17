@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hemarkiv.Access", "src\Hemarkiv.Access\Hemarkiv.Access.csproj", "{64A1536B-10BB-4A54-BFE0-ABEEA9ADFEAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hemarkivs.Tests", "src\tests\Hemarkivs.Tests\Hemarkivs.Tests.csproj", "{6D4E840A-8BA5-4071-A1F0-6D6AC49B2C2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64A1536B-10BB-4A54-BFE0-ABEEA9ADFEAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A1536B-10BB-4A54-BFE0-ABEEA9ADFEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A1536B-10BB-4A54-BFE0-ABEEA9ADFEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A1536B-10BB-4A54-BFE0-ABEEA9ADFEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D4E840A-8BA5-4071-A1F0-6D6AC49B2C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D4E840A-8BA5-4071-A1F0-6D6AC49B2C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D4E840A-8BA5-4071-A1F0-6D6AC49B2C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D4E840A-8BA5-4071-A1F0-6D6AC49B2C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
