@@ -54,10 +54,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="CategoryType.cs" />
     <Compile Include="ConfigurationBuilder.cs" />
+    <Compile Include="Movie.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="Mappings\BookMap.cs" />
     <Compile Include="Mappings\CategoryMap.cs" />
+    <Compile Include="Mappings\MovieMap.cs" />
+    <Compile Include="Mappings\InventoryMap.cs" />
+    <Compile Include="Mappings\MusicMap.cs" />
+    <Compile Include="Music.cs" />
+    <Compile Include="MusicMedia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

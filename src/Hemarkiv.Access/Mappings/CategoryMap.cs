@@ -29,6 +29,74 @@ namespace Hemarkiv.Access.Mappings
                 map.Column("Index");
                 map.Length(8);
             });
+
+            Set(x => x.Books, map =>
+                {
+                    map.Lazy(CollectionLazy.Lazy);
+                    map.Access(Accessor.Field);
+                    map.Key(fk =>
+                    {
+                        fk.Column("Kategori");
+                    });
+                    map.Cascade(Cascade.None);
+                    map.Inverse(true);
+                },
+                map => map.OneToMany(x =>
+                {
+                    x.NotFound(NotFoundMode.Ignore);
+                }
+            ));
+            Set(x => x.Movies,
+               map =>
+               {
+                   map.Lazy(CollectionLazy.Lazy);
+                   map.Access(Accessor.Field);
+                   map.Key(fk =>
+                   {
+                       fk.Column("Kategori");
+                   });
+                   map.Cascade(Cascade.None);
+                   map.Inverse(true);
+               },
+               map => map.OneToMany(x =>
+               {
+                   x.NotFound(NotFoundMode.Ignore);
+               }
+           ));
+            Set(x => x.InventoryItems,
+                map =>
+                {
+                    map.Lazy(CollectionLazy.Lazy);
+                    map.Access(Accessor.Field);
+                    map.Key(fk =>
+                    {
+                        fk.Column("Kategori");
+                    });
+                    map.Cascade(Cascade.None);
+                    map.Inverse(true);
+                },
+                map => map.OneToMany(x =>
+                {
+                    x.NotFound(NotFoundMode.Ignore);
+                }
+            ));
+            Set(x => x.Music,
+                map =>
+                {
+                    map.Lazy(CollectionLazy.Lazy);
+                    map.Access(Accessor.Field);
+                    map.Key(fk =>
+                    {
+                        fk.Column("Kategori");
+                    });
+                    map.Cascade(Cascade.None);
+                    map.Inverse(true);
+                },
+                map => map.OneToMany(x =>
+                {
+                    x.NotFound(NotFoundMode.Ignore);
+                }
+            ));
         }
     }
 }
